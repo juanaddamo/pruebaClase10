@@ -61,6 +61,7 @@ nav ul li{
 /* estilos del main */
 .estiloIndex{
     display: grid;
+    grid-template-columns: auto;
     grid-template-areas: "saludoUno"
     "parrafoUno"
     "parrafoDos"
