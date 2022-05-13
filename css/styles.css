@@ -117,7 +117,6 @@ footer{
 /* mq para tablets de 768px */
 @media screen and (min-width: 768px) {
     .estiloIndex{
-        height: 90vh;
         display: grid;
         grid-template-areas: "saludoUno saludoUno"
         "parrafoUno parrafoUno"
@@ -156,7 +155,6 @@ footer{
 /* mq para desktops de 1024px */
 @media screen and (min-width: 1024px) {
     .estiloIndex{
-        height: 90vh;
         display: grid;
         grid-template-areas: "saludoUno saludoUno saludoUno"
         "parrafoUno parrafoUno parrafoUno"
@@ -202,7 +200,6 @@ footer{
 /* estilo main about */
 .estiloAbout{
     margin: 0.5rem;
-    height: 80vh;
     display: grid;
     grid-template-areas: "aboutCompleta"
     "imagenAbout";
@@ -223,7 +220,6 @@ footer{
 @media screen and (min-width: 768px) {
     .estiloAbout{
         margin: 0.5rem;
-        height: 80vh;
         display: grid;
         grid-template-areas: "aboutCompleta"
         "imagenAbout";
@@ -239,7 +235,6 @@ footer{
 @media screen and (min-width: 1024px) {
     .estiloAbout{
         margin: 0.5rem;
-        height: 70vh;
         display: grid;
         grid-template-areas: "aboutCompleta imagenAbout";
         justify-content: center;
