@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link archivo CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- agrego fuente al proyecto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Annie's Bakery</title>
+
+</head>
+<body>  
+    
+    <!-- header con logo + menu + iconos redes sociales -->
+    <header>
+        
+        <!-- menu -->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <!-- imagen logo -->
+                    <a href="../index.html"> <img src="../img/logo_annies.png" alt="Annie's Bakery"></a>
+                </li>
+                <li class="botonesMenu"> 
+                    <a href="about.html"> Sobre Annie </a>
+                </li>
+                <li> 
+                    <p class="botonesMenu">Pastelería</p>
+                        <ul class="submenu">
+                            <li>
+                                <a href="tartas.html"> Tartas clásicas </a> 
+                            </li>
+                            <li>
+                                <a href="bundtcakes.html"> Bundtcakes y algo mas </a> 
+                            </li>
+                        </ul>
+                </li>
+                <li class="botonesMenu">
+                    <a href="contacto.html"> Contacto </a>
+                </li>
+                
+                <!-- iconos redes sociales -->
+                <a href="https://www.facebook.com/anniesbakeryARG" target="_blank"> <img src="../img/icon_face.png" alt="Facebook"> </a>
+
+                <a href="https://www.instagram.com/anniesbakery_arg/" target="_blank"> <img src="../img/icon_ig.png" alt="Instagram"> </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main + formulario contacto + links redes sociales -->
+    <main>
+        <section>
+            <p class="parrafoContacto">
+                Para realizar consultas y/o pedidos, por favor completa el siguiente formulario.
+            </p>
+        </section>
+        <!-- formulario de contacto -->
+        <form class="formContacto">
+           <fieldset>
+                <legend class="legendContacto"> Formulario de contacto </legend>
+
+                    <!-- campo nombre -->
+                    <div class="formCampo">
+                        <label for="nombre">
+                            Nombre
+                        </label>
+                        <input type="text" name="nombre" placeholder="ingresa tu nombre">
+                    </div>
+
+                    <!-- campo email -->
+                    <div class="formCampo">
+                        <label for="mail">
+                            Mail
+                        </label>
+                        <input type="email" name="mail" placeholder="ingresa tu mail">
+                    </div>
+
+                    <!-- campo consulta -->
+                    <div class="formCampo">
+                        <label for="consulta">
+                            Consulta o Pedido
+                        </label>
+                        <input type="text" name="consulta" placeholder="ingresa tu consulta y/o pedido">
+                    </div>
+
+                    <!-- botones del formulario -->
+                    <div class="formCampo">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Resetear">
+                    </div>
+            </fieldset>
+        </form>
+        <section>
+            <!-- parrafo redes sociales -->
+            <p class="redesContacto">
+                Seguime en las redes sociales
+            </p>
+            <!-- hipervinculos redes sociales -->
+            <div class="imagenContacto">
+                <a href="https://www.facebook.com/anniesbakeryARG" target="_blank"> <img src="../img/icon_face.png" alt="Facebook" style="width:30px;height:30px;"></style> </a>
+                <a href="https://www.instagram.com/anniesbakery_arg/" target="_blank"> <img src="../img/icon_ig.png" alt="Instagram" style="width:30px;height:30px;"> </a>
+            </div>
+        </section>
+   </main>
+
+    <!-- footer -->
+    <footer>
+        <h4>
+            Annie's Bakery © - Todos los derechos reservados - 2022
+        </h4>
+    </footer>
+
+</body>
+</html>

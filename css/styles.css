@@ -1,0 +1,438 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo del body */
+body{
+    background-image: url(../img/fondo_annies.png);
+    font-family: 'Open Sans';
+}   
+
+/* estilo del menu */
+nav ul{
+    display: flex;
+    background-color: #B4846C;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav ul li{
+    padding: 0.5rem;
+    color: white;
+    position: relative;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* oculto el submenu */
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+    background-color: #d49d81;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1rem;
+    padding: 0.5rem;
+}
+
+.botonesMenu{
+    background-color: #d49d81;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1rem;
+    border-radius: 1rem;
+}
+
+
+/* estilos del main */
+.estiloIndex{
+    height: 90vh;
+    display: grid;
+    grid-template-areas: "saludoUno"
+    "parrafoUno"
+    "parrafoDos"
+    "firma"
+    "imagenInicio1";
+}
+
+.saludoUno{
+    grid-area: saludoUno;
+    text-align: center;  
+}
+.parrafoUno{
+    grid-area: parrafoUno;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.parrafoDos{
+    grid-area: parrafoDos;
+    text-align: center;
+}
+
+.firma{
+    grid-area: firma;
+    text-align: center;
+    font-style: italic;
+}
+
+.imagenInicio1{
+    grid-area: imagenInicio1;
+    justify-self: center;
+}
+
+.imagenInicio2{
+    display: none;
+}
+
+.imagenInicio3{
+    display: none;
+}
+
+/* estilo de footer */
+footer{
+    padding: 10px;
+    font-family: 'Open Sans';
+    font-size: small;
+    background-color: #B4846C;
+    text-align: center;
+    color: white;
+}
+
+/* defino media queries para index.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloIndex{
+        height: 90vh;
+        display: grid;
+        grid-template-areas: "saludoUno saludoUno"
+        "parrafoUno parrafoUno"
+        "parrafoDos parrafoDos"
+        "firma firma"
+        "imagenInicio1 imagenInicio2";
+    }
+
+    .parrafoUno{
+        grid-area: parrafoUno;
+        font-size: large;
+    }
+
+    .parrafoDos{
+        grid-area: parrafoDos;
+        font-size: large;
+    }
+
+    .firma{
+        grid-area: firma;
+        font-size: large;
+    }
+
+    .imagenInicio1{
+        grid-area: imagenInicio1;
+    }
+
+    .imagenInicio2{
+        grid-area: imagenInicio2;
+        display: block;
+        justify-self: center;
+    }
+
+}
+
+/* mq para desktops de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloIndex{
+        height: 90vh;
+        display: grid;
+        grid-template-areas: "saludoUno saludoUno saludoUno"
+        "parrafoUno parrafoUno parrafoUno"
+        "parrafoDos parrafoDos parrafoDos"
+        "firma firma firma"
+        "imagenInicio1 imagenInicio2 imagenInicio3";
+    }
+
+    .parrafoUno{
+        grid-area: parrafoUno;
+    }
+
+    .parrafoDos{
+        grid-area: parrafoDos;
+    }
+
+    .firma{
+        grid-area: firma;
+    }
+
+    .imagenInicio1{
+        grid-area: imagenInicio1;
+    }
+
+    .imagenInicio2{
+        grid-area: imagenInicio2;
+        display: block;
+        justify-self: center;
+    }
+
+    .imagenInicio3{
+        grid-area: imagenInicio3;
+        display: block;
+        justify-self: center;
+    }
+}
+
+/* estilos para about.html */
+.aboutHistoria1{
+    font-weight: bold;
+}
+
+/* estilo main about */
+.estiloAbout{
+    margin: 0.5rem;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "aboutCompleta"
+    "imagenAbout";
+}
+
+.aboutCompleta{
+    grid-template-areas: aboutCompleta;
+    text-align: justify;
+}
+
+.imagenAbout{
+    grid-template-areas: imagenAbout;
+    display: none;
+}
+
+/* defino media queries para about.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloAbout{
+        margin: 0.5rem;
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "aboutCompleta"
+        "imagenAbout";
+    }
+
+    .imagenAbout{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* mq para tablets de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloAbout{
+        margin: 0.5rem;
+        height: 70vh;
+        display: grid;
+        grid-template-areas: "aboutCompleta imagenAbout";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagenAbout{
+        display: block;
+    }
+}
+
+/* estilo para tartas.html */
+/* defino el grid para las fotos */
+.estiloTartas{
+    display: grid;
+    grid-template-areas: "tituloClasica"
+                        "clasicaUno"
+                        "clasicaDos"
+                        "clasicaTres"
+                        "clasicaCuatro"
+                        "clasicaCinco"
+                        "clasicaSeis";
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+
+.tituloClasica{
+    grid-area: tituloClasica;
+    justify-self: center;
+}
+
+.clasicaUno{
+    grid-area: clasicaUno;
+}
+
+.clasicaDos{
+    grid-area: clasicaDos;
+}
+
+.clasicaTres{
+    grid-area: clasicaTres;
+}
+
+.clasicaCuatro{
+    grid-area: clasicaCuatro;
+}
+
+.clasicaCinco{
+    grid-area: clasicaCinco;
+}
+
+.clasicaSeis{
+    grid-area: clasicaSeis;
+}
+
+h3{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #d49d81;
+    border-radius: 1rem;
+}
+
+p{
+    padding: 0.5rem;
+}
+
+/* defino media queries para tartas.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloTartas{
+        display: grid;
+        grid-template-areas: "tituloClasica tituloClasica"
+                            "clasicaUno clasicaDos"
+                            "clasicaTres clasicaCuatro"
+                            "clasicaCinco clasicaSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* mq para desktop de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloTartas{
+        display: grid;
+        grid-template-areas: "tituloClasica tituloClasica tituloClasica"
+                            "clasicaUno clasicaDos clasicaTres"
+                            "clasicaCuatro clasicaCinco clasicaSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+h2{
+    margin: 1rem;
+}
+
+/* estilo para bundtcakes.html */
+/* defino el grid para las fotos */
+.estiloBundt{
+    display: grid;
+    grid-template-areas: "tituloBundt"
+                        "bundtUno"
+                        "bundtDos"
+                        "bundtTres"
+                        "bundtCuatro"
+                        "bundtCinco"
+                        "bundtSeis";
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+
+.tituloBundt{
+    grid-area: tituloBundt;
+    justify-self: center;
+}
+
+.bundtUno{
+    grid-area: bundtUno;
+}
+
+.bundtDos{
+    grid-area: bundtDos;
+}
+
+.bundtTres{
+    grid-area: bundtTres;
+}
+
+.bundtCuatro{
+    grid-area: bundtCuatro;
+}
+
+.bundtCinco{
+    grid-area: bundtCinco;
+}
+
+.bundtSeis{
+    grid-area: bundtSeis;
+}
+
+/* defino media queries para tartas.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloBundt{
+        display: grid;
+        grid-template-areas: "tituloBundt tituloBundt"
+                            "bundtUno bundtDos"
+                            "bundtTres bundtCuatro"
+                            "bundtCinco bundtSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* mq para desktop de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloBundt{
+        display: grid;
+        grid-template-areas: "tituloBundt tituloBundt tituloBundt"
+                            "bundtUno bundtDos bundtTres"
+                            "bundtCuatro bundtCinco bundtSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* estilo para contacto.html */
+.parrafoContacto{
+    text-align: justify;
+    margin: 1rem;
+}
+
+.formContacto{
+    margin: 1rem;
+}
+
+.legendContacto{
+    margin: 0.5rem;
+}
+
+.formCampo{
+    margin: 1rem;
+}
+
+.redesContacto{
+    margin: 1rem;
+    text-align: center;
+}
+
+.imagenContacto{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+
